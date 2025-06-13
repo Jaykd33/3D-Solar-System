@@ -4,11 +4,15 @@ This is an interactive 3D model of the Solar System built using **Three.js**. It
 
 ---
 
+## Model Image
+![Complete View of the solar system]()
+![Focus view of earth]()
+
 ## 🛠️ How to Run the Project
 
 > Make sure you have **Node.js**, **npm**, and a live server installed or use VS Code Live Server.
 
-### ✅ Option 1: Run Using VS Code Live Server
+### ✅ Option 1: Run using npm
 
 1. Open the project folder in **VS Code**
 2. Open a new terminal (command promt)
@@ -34,22 +38,39 @@ This is an interactive 3D model of the Solar System built using **Three.js**. It
 
 ## 📁 Folder Structure
 Solar_System_Project/
+
 │
+
 ├── index.html
+
 ├── index.js
+
 ├── README.md
+
 ├──package.json
+
 ├── sun.jpg
+
 ├── earth.jpg
+
 ├── moon.jpg
+
 ├── stars.jpg
+
 ├── mercury.jpg
+
 ├── venus.jpg
+
 ├── mars.jpg
+
 ├── jupiter.jpg
+
 ├── saturn.jpg
+
 ├── uranus.jpg
+
 ├── neptune.jpg
+
 
 ## ⚙️ Technologies Used
 
@@ -67,5 +88,9 @@ Solar_System_Project/
 - Use focus buttons to quickly zoom into a specific planet.
 
 ---
+
+## Presentation Video
+The presentation video of the project has been attached in the following link.
+ 
 
 ## 👨‍💻 Made with ❤️ by Jay
