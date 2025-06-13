@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Solar System Simulation</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: black;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(90deg, #000046, #1CB5E0);
+      color: #fff;
+      text-align: center;
+      padding: 12px 0;
+      font-size: 22px;
+      font-weight: bold;
+      z-index: 3;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    #footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(90deg, #1CB5E0, #000046);
+      color: #fff;
+      text-align: center;
+      padding: 6px 0;
+      font-size: 13px;
+      z-index: 3;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+    }
+
+    #controls {
+      position: absolute;
+      top: 60px;
+      left: 10px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 14px;
+      border-radius: 10px;
+      z-index: 2;
+      color: #000;
+      font-size: 13px;
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+    }
+
+    #controls label, #controls button {
+      display: block;
+      margin: 5px 0;
+    }
+
+    input[type="range"] {
+      width: 120px;
+    }
+
+    button {
+      margin-top: 4px;
+      padding: 5px;
+      font-size: 13px;
+      border: none;
+      background-color: #333;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">3D Model of Solar System</div>
+
+  <div id="controls">
+    <label>Mercury Speed: <input type="range" id="mercury" min="0" max="2" step="0.01" value="1"></label>
+    <label>Venus Speed: <input type="range" id="venus" min="0" max="2" step="0.01" value="0.8"></label>
+    <label>Earth Speed: <input type="range" id="earth" min="0" max="2" step="0.01" value="0.6"></label>
+    <label>Mars Speed: <input type="range" id="mars" min="0" max="2" step="0.01" value="0.5"></label>
+    <label>Jupiter Speed: <input type="range" id="jupiter" min="0" max="2" step="0.01" value="0.3"></label>
+    <label>Saturn Speed: <input type="range" id="saturn" min="0" max="2" step="0.01" value="0.2"></label>
+    <label>Uranus Speed: <input type="range" id="uranus" min="0" max="2" step="0.01" value="0.1"></label>
+    <label>Neptune Speed: <input type="range" id="neptune" min="0" max="2" step="0.01" value="0.08"></label>
+    <label for="lightSlider">🌞 Light Intensity:
+      <input type="range" id="lightSlider" min="0" max="5" step="0.1" value="2.5">
+    </label>
+
+    <button id="focus-mercury">Focus Mercury</button>
+    <button id="focus-venus">Focus Venus</button>
+    <button id="focus-earth">Focus Earth</button>
+    <button id="focus-mars">Focus Mars</button>
+    <button id="focus-jupiter">Focus Jupiter</button>
+    <button id="focus-saturn">Focus Saturn</button>
+    <button id="focus-uranus">Focus Uranus</button>
+    <button id="focus-neptune">Focus Neptune</button>
+  </div>
+
+  <div id="footer">Made with ❤️ using Three.js by Jay</div>
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>
