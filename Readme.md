@@ -5,7 +5,7 @@ This is an interactive 3D model of the Solar System built using **Three.js**. It
 ---
 
 ## Model Image
-![Complete View of the solar system]()
+![Complete View of the solar system](https://github.com/Jaykd33/3D-Solar-System/blob/main/Snapshot%20of%20the%20Model.png)
 ![Focus view of earth]()
 
 ## 🛠️ How to Run the Project
